@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from './App';
+import { StateContextProvider } from './contexts/StateContextProvider';
 
 import './index.css';
 
 ReactDOM.render(
-    <Router>
-        <App />
-    </Router>,
+    <StateContextProvider>
+        <Router>
+            <App />
+        </Router>
+    </StateContextProvider>,
     document.getElementById('root'));

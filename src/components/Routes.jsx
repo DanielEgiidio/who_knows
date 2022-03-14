@@ -8,9 +8,9 @@ export const Routes = () => {
     <div className="p-4">
       <Switch>
         <Route exact path="/">
-          <Redirect to="/pesquisar" />
+          <Redirect to="/search" />
         </Route>
-        <Route exact path={["/pesquisar", "/imagens", "/novidades", "/videos"]}>
+        <Route exact path={["/search", "/images", "/news", "/videos"]}>
           <Results />
         </Route>
       </Switch>
